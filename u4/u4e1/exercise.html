@@ -1,0 +1,41 @@
+<html><head></head><body><p>
+In this exercise you must create two different classes, which derive
+from the Bird class. This class is declared in <strong>bird.hh</strong>.
+</p>
+
+<p>You must implement two new classes, <strong>Duck</strong>, in <strong>duck.hh</strong>,
+and <strong>Owl</strong>, in <strong>owl.hh</strong>. These classes inherit from 
+Bird, and they implement the <strong>speak()</strong> member function.
+</p>
+
+<p>When a owl speaks, it prints out its name and the text WHUU delimited
+by : to the output stream. When a duck speaks, it prints out its name and the 
+text QUACK delimited by : to the output stream. Both messages are terminated by
+the newline character. For example, if a Duck called "Matti" spoke to std::cout, the text
+"Matti: QUACK" would be printed to the standard output.
+</p>
+
+<p>You must also implement the class <strong>Aviary</strong>, which is used to house
+different kinds of birds. The header file stub <strong>aviary.hh</strong> can be downloaded
+from this page. You must fill it and return both the header file and its implementation in <strong>aviary.cc</strong>.
+The header file has more specific instructions.
+</p>
+
+<p>We will also give you a very simple test program to test your classes.
+</p>
+
+<h2>Notes:</h2>
+
+<ul>
+<li>To get operator[] to work with both const and nonconst aviaries, you must actually
+implement it twice. The return value must be a pointer to Bird.
+</li>
+<li>The member function <strong>addBird()</strong> takes its parameter as a pointer to 
+prevent <a href="http://en.wikipedia.org/wiki/Slicing">object slicing</a>.
+</li>
+<li>If somebody tries to copy an instance of Aviary, the compilation must fail.
+It is your job to make this happen.
+</li>
+
+</ul>
+</body></html>
