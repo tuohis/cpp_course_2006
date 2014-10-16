@@ -1,3 +1,5 @@
-.o
-.out
-.log
+*.o
+*.out
+*.log
+main
+*main
